@@ -1,0 +1,145 @@
+/* Body styling with background image */
+body {
+  background-image: url('/wod-banyans-background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #fafafa;
+}
+
+.navbar .nav-link {
+  color: black !important;
+  padding: 0.5rem 0.75rem;
+}
+
+.navbar .dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+
+.navbar .dropdown-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Mobile menu styling - Make items horizontal when expanded */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #fafafa;
+    padding: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Force all navs to be horizontal */
+  .navbar-collapse .nav {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .navbar-collapse .nav-item {
+    margin: 5px 10px;
+  }
+  
+  .navbar-collapse .nav-link {
+    padding: 8px 12px;
+  }
+  
+  /* Make the container horizontal too */
+  .navbar-collapse .d-lg-flex {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* Keep menu items together */
+  .navbar-collapse .me-lg-3 {
+    margin-right: 0 !important;
+    margin-bottom: 10px;
+  }
+  
+  /* Dropdown button spacing */
+  .navbar-collapse .ms-lg-2 {
+    margin-left: 10px !important;
+  }
+}
+
+/* Center content styling */
+.center-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+  min-height: 70vh;
+}
+
+.center-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.center-content h2 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.center-content .lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Footer styling */
+footer {
+  margin-top: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #1c1c1c;
+  color: #fafafa;
+}
+
+footer h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+footer p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+footer .form-control {
+  background-color: white;
+  border: none;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+footer .btn-light {
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+}
